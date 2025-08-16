@@ -1,67 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datadistrict Consult LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+      background: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    header h1 {
+      font-weight: 900;
     }
-    h1, h2 {
-      color: #003366;
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: center;
+      padding: 60px;
+      background: url('https://avatars.mds.yandex.net/get-altay/10879408/2a000001910557b5a31661e7c3492972108c/XXL_height') center/cover;
+      min-height: 90vh;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero-text h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .hero-text a {
+      background: #fff;
+      color: #000;
+      padding: 12px 24px;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 60px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 10px;
     }
     .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+      padding: 60px;
+      background: #111;
+    }
+    .contact h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .contact p {
+      margin: 6px 0;
     }
     footer {
-      background-color: #003366;
-      color: white;
+      background: #000;
+      padding: 20px;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>Datadistrict Consult LLC</h1>
+    <nav>
+      <a href="#collection">Collection</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
-
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>The Future of Data Innovation</h2>
+      <p>Datadistrict Consult LLC unites technology, innovation, and strategy to deliver powerful solutions that challenge boundaries.</p>
+      <a href="#collection">Explore the Collection</a>
     </div>
   </section>
 
+  <section id="products" class="grid">
+    <img src="https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1205428317/image_1205428317.jpg?io=getty-c-crop-4-3" alt="Product 1">
+    <img src="https://na.panasonic.com/us/sites/default/files/2019-09/big-data-innovation-2400.jpg" alt="Product 2">
+    <img src="https://classix.de/wp-content/uploads/2020/06/digitization-1755642_1920.jpg" alt="Product 3">
+    <img src="https://avatars.mds.yandex.net/get-altay/4335161/2a00000178b1178636aa31cc9f5110d10625/orig" alt="Product 4">
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <p><strong>Company:</strong> Datadistrict Consult LLC</p>
+    <p><strong>Phone:</strong> +13156097178</p>
+    <p><strong>Email:</strong> contact@datadcl.shop</p>
+    <p><strong>Address:</strong> 15250 Blackfoot Rd, Apple Valley</p>
+
+    <iframe src="https://www.google.com/maps?q=15250+Blackfoot+Rd,+Apple+Valley&output=embed"></iframe>
+  </section>
+
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    © 2025 Datadistrict Consult LLC. All rights reserved.
   </footer>
 </body>
 </html>
